@@ -6,6 +6,7 @@
     mv 移动文件/重命名文件
     ln 文件软连接
     rm 删除文件
+    vi 编辑文件
     mkdir 创建文件夹
     cat 查看文件内容
     less 查看文件内容
@@ -30,4 +31,15 @@ mkdir software
 cd software
 wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh ./
 ```
-使用
+运行下载好的安装脚本
+```shell
+sh Anaconda3-2022.05-Linux-x86_64.sh
+```
+**注意：**  
+    1. 安装过程中需要指定安装路径且路径文件夹不可以存在
+    2. 安装最后会提示是否设为全局选择NO，不要影响其他人部署软件
+安装完成后使用export指定安装路径的conda环境，例如：  
+```shell
+export PATH=/public/home/dk_ckq/metagenomics/XXX/software/conda/bin:$PATH
+```
+
