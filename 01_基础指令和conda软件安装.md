@@ -21,7 +21,7 @@
 [conda下载页面](https://www.anaconda.com/products/distribution)
 选择Linux文件下载后使用Xshell上传至自己目录下
 或者直接在服务器下载
-///shell
+```shell
 wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh ./
-///
+```
 
