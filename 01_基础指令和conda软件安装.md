@@ -69,6 +69,7 @@ source deactivate  ## 退出环境
 conda remove -n AAA --all  ## 删除AAA环境  
 ```
 **注意：** 
+
     1. 创建环境同一账户下名字会重复，创建时注意使用conda env list查看是否已有重名环境
     
     2. 由于账户目前共用，统一独立创建环境进行后续操作
