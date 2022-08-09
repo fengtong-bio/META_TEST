@@ -47,3 +47,16 @@ export PATH=/public/home/dk_ckq/metagenomics/XXX/software/conda/bin:$PATH
 which conda
 ```
 
+#### 2. conda软件安装
+conda软件安装分为在主环境中安装和创建新的环境安装
+```shell
+主环境直接安装
+conda install fastqc
+创建新环境安装
+conda create -n AAA python=3.6 ## 创建一个名为AAA的环境，可以在后面指定python版本，也可以不指定
+source activate AAA  ## 激活AAA环境
+conda install fastqc  ## 在AAA环境中安装fastqc
+source deactivate  ## 退出环境
+conda remove -n AAA --all  ## 删除AAA环境
+```
+
