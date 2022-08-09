@@ -53,10 +53,13 @@ conda软件安装分为在主环境中安装和创建新的环境安装
 主环境直接安装
 conda install fastqc
 创建新环境安装
-conda create -n AAA python=3.6 ## 创建一个名为AAA的环境，可以在后面指定python版本，也可以不指定
-source activate AAA  ## 激活AAA环境
-conda install fastqc  ## 在AAA环境中安装fastqc
-source deactivate  ## 退出环境
-conda remove -n AAA --all  ## 删除AAA环境
+conda create -n AAA python=3.6 ## 创建一个名为AAA的环境，可以在后面指定python版本，也可以不指定  
+source activate AAA  ## 激活AAA环境  
+conda install fastqc  ## 在AAA环境中安装fastqc  
+source deactivate  ## 退出环境  
+conda remove -n AAA --all  ## 删除AAA环境  
 ```
+**注意：** 
+    1. 创建环境同一账户下名字会重复，创建时注意使用conda env list查看是否已有重名环境
+    2. 由于账户目前共用，统一独立创建环境进行后续操作
 
