@@ -74,11 +74,12 @@ conda remove -n AAA --all  ## 删除AAA环境
     
     2. 由于账户目前共用，统一独立创建环境进行后续操作
 
-需要安装准备软件有：  
+**需要安装准备软件有：**  
     fastqc
     trimmomatic
     bowtie2
     metaphlan2
     humann
+
 **注意：** 
 有些软件可以不适用conda安装，直接下载安装即可
