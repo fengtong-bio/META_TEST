@@ -1,4 +1,4 @@
-### 1. 需要学习的基础指令
+## 1. 需要学习的基础指令
     cd 文件夹间跳转
     cp 文件拷贝
     ll 显示文件目录
@@ -17,8 +17,8 @@
     find 查找文件
     wget 下载
 
-### 2. conda软件安装
-#### 1. conda主软件安装
+## 2. conda软件安装
+### 1. conda主软件安装
 在个人目录下创建用于软件安装的文件夹
 ```shell
 mkdir software
@@ -50,7 +50,7 @@ export PATH=/public/home/dk_ckq/metagenomics/XXX/software/conda/bin:$PATH
 which conda
 ```
 
-#### 2. conda软件安装
+### 2. conda软件安装
 conda软件安装分为在主环境中安装和创建新的环境安装
 ```shell
 主环境直接安装
