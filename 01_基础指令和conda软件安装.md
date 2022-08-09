@@ -83,4 +83,5 @@ conda remove -n AAA --all  ## 删除AAA环境
     humann  
 
 **注意：** 
-有些软件可以不适用conda安装，直接下载安装即可
+
+有些软件可以不使用conda安装，直接下载安装即可
