@@ -42,4 +42,8 @@ sh Anaconda3-2022.05-Linux-x86_64.sh
 ```shell
 export PATH=/public/home/dk_ckq/metagenomics/XXX/software/conda/bin:$PATH
 ```
+调用后使用which指令查看conda软件是否是自己安装路径的那个
+```shell
+which conda
+```
 
