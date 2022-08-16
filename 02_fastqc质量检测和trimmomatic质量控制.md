@@ -27,7 +27,7 @@ fastqc sample_B3_R1.fq.gz sample_B3_R2.fq.gz -o PATH_TO/01fastqc_out/ -t 4
 
 ## 2. trimmomatic质量控制
 ### 1. trimmomatic质量控制-参考指令
-[官方说明](http://www.usadellab.org/cms/index.php?page=trimmomatic)
+[官方说明](http://www.usadellab.org/cms/index.php?page=trimmomatic)  
 [软件介绍](https://www.jianshu.com/p/a8935adebaae)
 
 ```shell
