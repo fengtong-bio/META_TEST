@@ -5,10 +5,12 @@
     scontrol：显示或设定Slurm作业、队列、节点等状态。
     squeue：显示队列中的作业及作业步状态。
     srun：实时交互式运行并行作业，一般用于段时间测试，或者与sallcoc及sbatch结合。
+    注意：严禁在账户直接运行计算程序，不清楚的联系SXH了解提交规则。
 
 ## 2. fastqc质量检测
 ### 1. fastqc质量检测-参考指令
 ```shell
+fastqc -h #查看软件说明文档
 fastqc sample_A1_R1.fq.gz sample_A1_R2.fq.gz -o PATH_TO/01fastqc_out/ -t 4
 fastqc sample_A2_R1.fq.gz sample_A2_R2.fq.gz -o PATH_TO/01fastqc_out/ -t 4
 fastqc sample_A3_R1.fq.gz sample_A3_R2.fq.gz -o PATH_TO/01fastqc_out/ -t 4
@@ -22,8 +24,12 @@ fastqc sample_B3_R1.fq.gz sample_B3_R2.fq.gz -o PATH_TO/01fastqc_out/ -t 4
 1. 官方说明：[fastqc](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 2. 网络解读：[简书](https://www.jianshu.com/p/fe6af418a8bc)；[知乎](https://zhuanlan.zhihu.com/p/88655260)
 
+
 ## 2. trimmomatic质量控制
 ### 1. trimmomatic质量控制-参考指令
+[官方说明](http://www.usadellab.org/cms/index.php?page=trimmomatic)
+[软件介绍](https://www.jianshu.com/p/a8935adebaae)
+
 ```shell
 java -jar trimmomatic-0.39.jar PE -threads 4 sample_A1_R1.fq.gz sample_A1_R2.fq.gz PATH_TO/02_trimmomatic_out/sample_A1_clean_R1.fq.gz PATH_TO/02_trimmomatic_out/sample_A1_unpaired_R1.fq.gz PATH_TO/02_trimmomatic_out/sample_A1_clean_R2.fq.gz PATH_TO/02_trimmomatic_out/sample_A1_unpaired_R2.fq.gz ILLUMINACLIP:PATH_TO_SOFTWARE/trimmomatic/TruSeq2-PE.fa:2:30:10 SLIDINGWINDOW:15:30 MINLEN:110 TRAILING:30 AVGQUAL:30
 java -jar trimmomatic-0.39.jar PE -threads 4 sample_A2_R1.fq.gz sample_A2_R2.fq.gz PATH_TO/02_trimmomatic_out/sample_A2_clean_R1.fq.gz PATH_TO/02_trimmomatic_out/sample_A2_unpaired_R1.fq.gz PATH_TO/02_trimmomatic_out/sample_A2_clean_R2.fq.gz PATH_TO/02_trimmomatic_out/sample_A2_unpaired_R2.fq.gz ILLUMINACLIP:PATH_TO_SOFTWARE/trimmomatic/TruSeq2-PE.fa:2:30:10 SLIDINGWINDOW:15:30 MINLEN:110 TRAILING:30 AVGQUAL:30
